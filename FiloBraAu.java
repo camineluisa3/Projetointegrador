@@ -1,3 +1,5 @@
+import java.util.Scanner; 
+
 class FiloBraAu {
 	
 	String autorBrasileiro;
@@ -18,6 +20,8 @@ class FiloBraAu {
 
 		}
 		
+		this.Bio = Bio;
+		
 		if (Ideais.trim().length() > 2) {
 			this.Ideais = Ideais;
 		} else {
@@ -25,5 +29,17 @@ class FiloBraAu {
 		}
 	}
 	
-	
+	public void LerTeclado () {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Olá! Bem vindo ao código. O obejtivo desse código em especifico é encontrar autores brasileiros que compartilhem ideais parecidos com algum autor estrangeiro." + "\n" + "Escreva o nome de um autor estrangeiro, que devolveremos um brasileiro: ");
+		
+		String AutorDigitado = sc.nextLine ();
+		
+		System.out.println("Você digitou: " + AutorDigitado);
+		
+		
+	}
 }
+
