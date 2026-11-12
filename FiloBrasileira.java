@@ -77,7 +77,8 @@ public class FiloBrasileira {
 		
 		giannetti.ideais.add("Comportamento humano");
 		giannetti.ideais.add("Ética");
-		giannetti.ideais.add("Relação entre indivíduo e sociedade");
+		giannetti.ideais.add("Economia");
+		giannetti.ideais.add("Relaçao entre indivíduo e sociedade");
 		giannetti.ideais.add("Racionalidade");
 		
 		bancoAutores.add(giannetti);
@@ -91,12 +92,12 @@ public class FiloBrasileira {
 		
 		krenak.ideais.add("Crise ambiental");
 		krenak.ideais.add("Povos tradicionais");
-		krenak.ideais.add("Crítica ao capitalismo");
-		krenak.ideais.add("Relação entre humanidade e natureza");
+		krenak.ideais.add("Critica ao capitalismo");
+		krenak.ideais.add("Relaçao entre humanidade e natureza");
 		
 		bancoAutores.add(krenak);
 		
-		FiloBraAu safatle = new FiloBraAu ("Vladimir Safatle", "Vladimir é um filósofo chileno-brasileiro, psicanalista e escritor: é uma figura de destaque nos estudos contemporâneos sobre a relação entre filosofia, filosofia da música, psicanálise e política — reconhecido por seu ativismo e pensamento político de vertente marxsista. Professor na USP e colunista da Folha de São Paulo por 10 anos, colunista do El País por 3 anos, escreve para os principais jornais do país.");
+		FiloBraAu safatle = new FiloBraAu ("Vladimir Safatle", "Vladimir é um filósofo chileno-brasileiro, psicanalista e escritor: é uma figura de destaque nos estudos contemporâneos sobre a relação entre filosofia, filosofia da música, psicanálise e política, reconhecido por seu ativismo e pensamento político de vertente marxsista. Professor na USP e colunista da Folha de São Paulo por 10 anos, colunista do El País por 3 anos, escreve para os principais jornais do país.");
 		
 		safatle.autoresEstrangeiros.add("Karl Marx");
 		safatle.autoresEstrangeiros.add("Theodor Adorno");
@@ -106,6 +107,7 @@ public class FiloBrasileira {
 		safatle.ideais.add("Marxismo");
 		safatle.ideais.add("Capitalismo");
 		safatle.ideais.add("Ideologia");
+		safatle.ideais.add("Comunismo");
 		safatle.ideais.add("Psicanálise");
 		
 		bancoAutores.add(safatle);
@@ -121,12 +123,14 @@ public class FiloBrasileira {
 		chaui.ideais.add("Politica");
 		chaui.ideais.add("Democracia");
 		chaui.ideais.add("Autoritarismo");
+		chaui.ideais.add("Comunismo");
 		chaui.ideais.add("Marxismo");
+		chaui.ideais.add("Socialismo");
 		chaui.ideais.add("Liberdade");
 
 		bancoAutores.add(chaui);
 		
-		FiloBraAu sueli = new FiloBraAu("Sueli Carneiro", "Sueli Carneiro é uma filósofa, escritora e ativista antirracista, amplamente reconhecida como uma das principais teóricas do feminismo negro no Brasil e fundadora do Geledés — Instituto da Mulher Negra. Em sua formulação teórica, destaca-se o conceito de epistemicídio, que descreve o processo colonial de negação, desvalorização e apagamento dos saberes e da cultura produzidos por povos negros e marginalizados. Sua atuação política e intelectual foi decisiva para a implementação de recortes de raça e gênero em políticas públicas e para a consolidação das cotas raciais nas universidades. Autora de livros essenciais como Racismo, Sexismo e Desigualdade no Brasil e Dispositivo de Racialidade, ela recebeu o título de Doutora Honoris Causa por grandes universidades brasileiras devido ao seu impacto social.");
+		FiloBraAu sueli = new FiloBraAu("Sueli Carneiro", "Sueli Carneiro é uma filósofa, escritora e ativista antirracista, amplamente reconhecida como uma das principais teóricas do feminismo negro no Brasil e fundadora do Geledés, Instituto da Mulher Negra. Em sua formulação teórica, destaca-se o conceito de epistemicídio, que descreve o processo colonial de negação, desvalorização e apagamento dos saberes e da cultura produzidos por povos negros e marginalizados. Sua atuação política e intelectual foi decisiva para a implementação de recortes de raça e gênero em políticas públicas e para a consolidação das cotas raciais nas universidades. Autora de livros essenciais como Racismo, Sexismo e Desigualdade no Brasil e Dispositivo de Racialidade, ela recebeu o título de Doutora Honoris Causa por grandes universidades brasileiras devido ao seu impacto social.");
 
 		sueli.autoresEstrangeiros.add("Angela Davis");
 		sueli.autoresEstrangeiros.add("bell hooks");
@@ -271,6 +275,7 @@ public class FiloBrasileira {
 
 		merquior.ideais.add("Liberalismo");
 		merquior.ideais.add("Liberdade");
+		merquior.ideais.add("Economia");
 		merquior.ideais.add("Cultura");
 		merquior.ideais.add("Politica");
 		
@@ -405,7 +410,7 @@ public class FiloBrasileira {
 		zingano.ideais.add("Virtude");
 		zingano.ideais.add("Deliberacao Moral");
 		zingano.ideais.add("Conhecimento");
-		zingano.ideais.add("Acao Humana");
+		zingano.ideais.add("Açao Humana");
 
 		bancoAutores.add(zingano);
 		
@@ -503,6 +508,8 @@ public class FiloBrasileira {
 		caioPrado.autoresEstrangeiros.add("Immanuel Wallerstein");
 
 		caioPrado.ideais.add("Marxismo");
+		caioPrado.ideais.add("Comunismo");
+		caioPrado.ideais.add("Socialismo");
 		caioPrado.ideais.add("Capitalismo");
 		caioPrado.ideais.add("Colonialismo");
 		caioPrado.ideais.add("Historia");
@@ -593,6 +600,7 @@ public class FiloBrasileira {
 		if (opcao == 1) {
 			
 			System.out.printf("Digite um autor estrangeiro: \n");
+			System.out.printf("(Obs: escreva corretamente e com a letra inicial maiúscula) \n");
 			String pesquisa = sc.nextLine();
 			
 			boolean existe = false;
@@ -614,6 +622,7 @@ public class FiloBrasileira {
 			
 		} else if (opcao == 2) {
 			System.out.print("Digite um ideal: ");
+			System.out.printf("(Obs: escreva corretamente e com a letra inicial maiúscula) \n");
 			String pesquisa = sc.nextLine();
 			
 			boolean existe = false;
@@ -627,11 +636,11 @@ public class FiloBrasileira {
 					
 					existe = true;
 				}
-				
-				if (!existe) {
+			}
+			
+			if (!existe) {
 					System.out.printf("Nenhum autor encontrado. Tente novamente ou pesquisa pelos autores estrangeiros.");
 				}
-			}
 		}
 		
 		sc.close();
