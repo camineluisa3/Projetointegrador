@@ -589,7 +589,7 @@ public class FiloBrasileira {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.printf("Olá, bem vindos ao código, gostaria de começar as buscar utilizando: \n");
+		System.out.printf("Olá, bem vindos ao código. Gostaria de começar a buscar utilizando: \n");
 		System.out.printf("1 - Autor estrangeiro\n");
 		System.out.printf("2 - Ideais \n");
 		System.out.printf("Escolha escrevendo o número: \n");
@@ -609,7 +609,7 @@ public class FiloBrasileira {
 				
 				if (autor.autoresEstrangeiros.contains(pesquisa)) {
 				
-					System.out.println ("Autor encontrado: " + autor.autorBrasileiro + "\n");
+					System.out.println ("Autor nacional encontrado: " + autor.autorBrasileiro + "\n");
 					System.out.println ("Biografia: " + autor.bio + "\n");
 				
 					existe = true;
@@ -621,7 +621,7 @@ public class FiloBrasileira {
 			}
 			
 		} else if (opcao == 2) {
-			System.out.print("Digite um ideal: ");
+			System.out.print("Digite um ideal: \n");
 			System.out.printf("(Obs: escreva corretamente e com a letra inicial maiúscula) \n");
 			String pesquisa = sc.nextLine();
 			
@@ -631,7 +631,7 @@ public class FiloBrasileira {
 				
 				if (autor.ideais.contains(pesquisa)) {
 					
-					System.out.println("Autor encontrado: " + autor.autorBrasileiro + "\n");
+					System.out.println("Autor nacional encontrado: " + autor.autorBrasileiro + "\n");
 					System.out.println("Biografia: " + autor.bio + "\n");
 					
 					existe = true;
